@@ -1,3 +1,4 @@
+import CommentSectionHead from "./commentSectionHead";
 import CommentForm from "./commentForm";
 import Comment from "./comment";
 
@@ -8,6 +9,7 @@ function CommentSection() {
   const currentUser = commentList.currentUser;
   return (
     <>
+      <CommentSectionHead/> 
       <ul className="comment-container">
         {commentListItem}
       </ul>
