@@ -6,8 +6,10 @@ function Comment({comment}){
         <li className="comment">
             <div className="comment__head"> 
                 <UserProfile author={comment.author} />
-                <p className="comment__content">{comment.content}</p>
-                <CommentVote votes={comment.votesCount} />
+                <div className="comment__info-wrapper">
+                    <p className="comment__content">{comment.content}</p>
+                    <CommentVote votes={comment.votesCount} />
+                </div>
             </div>
         </li>
     )

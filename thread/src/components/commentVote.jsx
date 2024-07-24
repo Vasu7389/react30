@@ -7,7 +7,7 @@ function CommentVote({votes}){
             <button aria-label="downvote comment" className="comment__vote-btn comment__vote-btn--downvote">
                 <img src="/icons/downvote.svg" alt="" aria-hidden="true"/>
             </button>
-            <p>{votes}</p>
+            <p className="vote-count__numbers">{votes}</p>
         </div>
     )
 }
