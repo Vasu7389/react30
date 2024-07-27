@@ -1,4 +1,4 @@
-import { CommentInfoContext } from "../context/commentIdContext";
+import { CommentInfoContext } from "../context/commentInfoContext";
 import { useContext } from "react";
 
 function DeleteButton() {

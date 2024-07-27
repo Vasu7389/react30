@@ -1,5 +1,5 @@
 import { useContext, useRef } from "react";
-import { CommentInfoContext } from "../context/commentIdContext";
+import { CommentInfoContext } from "../context/commentInfoContext";
 
 function CommentVote({ votes, like, dislike }) {
   const { commentId, onSetCommentList } = useContext(CommentInfoContext);

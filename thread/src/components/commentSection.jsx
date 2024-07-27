@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { CommentInfoContext } from "../context/commentIdContext";
+import { CommentInfoContext } from "../context/commentInfoContext";
 
 import CommentSectionHead from "./commentSectionHead";
 import CommentForm from "./commentForm";
