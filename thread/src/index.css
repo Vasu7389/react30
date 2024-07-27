@@ -21,6 +21,21 @@ body {
   padding: 1rem;
 }
 
+.comment-section-header {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comment-section-header__title {
+  color: var(--text-clr);
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 .comment-container {
   display: flex;
   flex-direction: column;
@@ -84,20 +99,23 @@ body {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .comment__vote-count {
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem;
   width: max-content;
+  height: max-content;
   font-family: var(--main-font);
   font-size: 0.8rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white-clr);
   border-radius: 50px;
-  gap: 0.5rem;
+  background-color: var(--white-clr);
+  gap: 0.2rem;
 }
 
 .comment__vote-btn {
@@ -107,6 +125,27 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+}
+
+.vote-btn__checkbox {
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  border: none;
+  outline: none;
+}
+
+.vote-btn__checkbox-icon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.vote-btn__checkbox:checked + .vote-btn__checkbox-icon {
+  background-color: var(--text-clr);
 }
 
 .comment__form {
@@ -129,13 +168,19 @@ body {
 .comment__form__content {
   color: var(--text-clr);
   padding: 0.5rem;
+  height: 3rem;
   font-size: 0.8rem;
   font-family: var(--main-font);
   flex: 1;
   resize: none;
   border-radius: 5px;
-  border: none;
+  border: 2px solid transparent;
+  outline: none;
   background-color: var(--white-clr);
+}
+
+.comment__form__content::-webkit-scrollbar {
+  appearance: none;
 }
 
 .comment__post-comment-btn {
@@ -163,10 +208,10 @@ body {
   }
 
   .comment__vote-btn--downvote {
-    order:2;
+    order: 2;
   }
 
   .comment__content {
-    font-size:1rem;
+    font-size: 1rem;
   }
 }

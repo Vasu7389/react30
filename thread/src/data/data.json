@@ -1,27 +1,31 @@
 {
   "currentUser": {
     "id":0,
-    "userName": "anonyous",
+    "userName": "anonymous",
     "userProfileUrl": "/images/anonymous.svg"
   },
   "comments": [
     {
-      "id": 1,
+      "id": 0,
       "author": {
         "userName": "alexander makarov",
         "userProfileUrl": "/images/person-1.png"
       },
       "content": "Really enjoyed this article! The insights were very helpful and the writing was clear and concise. Looking forward to more content like this. Keep up the great work!",
-      "votesCount": 12
+      "votesCount": 12,
+      "like":false,
+      "dislike":false
     },
     {
-      "id": "2",
+      "id": "1",
       "author": {
         "userName": "john smith",
         "userProfileUrl": "/images/person-2.png"
       },
       "content": "This tutorial was exactly what I needed. The step-by-step instructions were easy to follow. Thanks for sharing!",
-      "votesCount": 12
+      "votesCount": 12,
+      "like":false,
+      "dislike":false
     }
   ]
 }

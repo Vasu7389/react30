@@ -1,11 +1,11 @@
-import CommentSection from "./components/commentSection"
+import CommentSection from "./components/commentSection";
 
 function App() {
   return (
     <>
-       <CommentSection /> 
+      <CommentSection />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
